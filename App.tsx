@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AyurvedicSearch } from './components/AyurvedicSearch';
+import AyurvedicSearch from './components/AyurvedicSearch';
 import { PatientManager } from './components/PatientManager';
 import { BookOpenIcon } from './components/icons/BookOpenIcon';
 import { UsersIcon } from './components/icons/UsersIcon';
