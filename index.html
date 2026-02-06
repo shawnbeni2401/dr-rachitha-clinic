@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Rachitha's Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#1E40AF" />
+    <link rel="apple-touch-icon" href="/icon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'sans-serif'],
+            },
+            colors: {
+              'brand-primary': '#1E40AF',      // Rich Blue (blue-800)
+              'brand-accent': '#F97316',      // Vibrant Orange (orange-500)
+              'brand-accent-light': '#FFEDD5', // Light Orange (orange-100)
+              'brand-background': '#F8FAFC',  // Cool Off-white (slate-50)
+              'brand-surface': '#FFFFFF',
+              'text-primary': '#1E293B',      // Dark Slate (slate-800)
+              'text-secondary': '#64748B',    // Lighter Slate (slate-500)
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.4s ease-out forwards',
+              'slide-in-down': 'slide-in-down 0.5s ease-out forwards',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': {
+                  opacity: '0',
+                  transform: 'translateY(20px)',
+                },
+                '100%': {
+                  opacity: '1',
+                  transform: 'translateY(0)',
+                },
+              },
+               'slide-in-down': {
+                '0%': {
+                  opacity: '0',
+                  transform: 'translateY(-20px)',
+                },
+                '100%': {
+                  opacity: '1',
+                  transform: 'translateY(0)',
+                },
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+        /* Custom scrollbar for a more subtle look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #E2E8F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #A0AEC0;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096;
+        }
+
+        @media print {
+          body, html {
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+          }
+          .print-container > * {
+            display: none;
+          }
+          .print-container .fixed.inset-0 {
+            display: block !important;
+            position: relative !important;
+          }
+        }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-brand-background font-sans">
+    <div id="root">
+      <div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Poppins, sans-serif; color: #64748B;">
+        Loading Dr. Rachitha's Clinic...
+      </div>
+    </div>
+    <noscript>
+      <div style="font-family: Poppins, sans-serif; text-align: center; padding: 2rem;">
+        <h2>JavaScript is required to run this application.</h2>
+        <p>Please enable JavaScript in your browser settings and refresh the page.</p>
+      </div>
+    </noscript>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

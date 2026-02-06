@@ -1,0 +1,18 @@
+{
+  "short_name": "Dr. Rachitha",
+  "name": "Dr. Rachitha's Clinic",
+  "description": "Your Digital Partner for Ayurvedic Practice. Manage patient records, schedule appointments, and explore Ayurvedic knowledge.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1E40AF",
+  "background_color": "#F8FAFC",
+  "scope": "/"
+}
