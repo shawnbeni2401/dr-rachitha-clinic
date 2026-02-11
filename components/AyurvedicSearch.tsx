@@ -3,7 +3,7 @@ import { searchAyurveda } from '../services/geminiService';
 import { AyurvedicSearchResponse } from '../types';
 import { HerbIllustration } from './icons/HerbIllustration';
 
-export const AyurvedicSearch: React.FC = () => {
+const AyurvedicSearch: React.FC = () => {
   const [query, setQuery] = useState('');
   const [searchResponse, setSearchResponse] = useState<AyurvedicSearchResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -102,3 +102,5 @@ export const AyurvedicSearch: React.FC = () => {
     </div>
   );
 };
+
+export default AyurvedicSearch;
